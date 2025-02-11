@@ -23,7 +23,7 @@ This folder will contain all your entities. Let's look at some simple use cases.
 
 |Field|Type|Nullable|
 |----|----|--------|
-|IdUser  |nvachar(10)|NN
+|Id  |nvachar(10)|NN
 |StreetNumber|nvachar(10)|NN
 |ZipCode|int|NN
 |Town|nvachar(10)|NN
@@ -127,7 +127,6 @@ namespace Revision.Data
             // Address
             modelBuilder.Entity<Address>(entity => 
             {
-                entity.HasKey(a => a.IdUser);
                 // Your code here ...
             });
         }
